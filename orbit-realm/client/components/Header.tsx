@@ -1,8 +1,5 @@
 import { useState } from 'react';
-<<<<<<< HEAD
 import type { SiteContent } from '@shared/content';
-=======
->>>>>>> origin/main
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
@@ -13,11 +10,7 @@ interface HeaderProps { data?: SiteContent['header']; }
 export default function Header({ data }: HeaderProps) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-<<<<<<< HEAD
   const navigation = (data?.nav) || [
-=======
-  const navigation = [
->>>>>>> origin/main
     { name: 'Servicios', href: '#servicios' },
     { name: 'Metodología', href: '#metodologia' },
     { name: 'Certificaciones', href: '#certificaciones' },
@@ -39,11 +32,7 @@ export default function Header({ data }: HeaderProps) {
               <div className="gradient-bg w-8 h-8 sm:w-9 sm:h-9 rounded-lg flex items-center justify-center shadow-lg">
                 <span className="text-white font-bold text-sm sm:text-base">T</span>
               </div>
-<<<<<<< HEAD
                 <span className="text-lg sm:text-xl font-bold text-foreground truncate">{data?.brandName || 'Tecnologik'}</span>
-=======
-              <span className="text-lg sm:text-xl font-bold text-foreground truncate">Tecnologik</span>
->>>>>>> origin/main
             </Link>
           </motion.div>
 
@@ -81,11 +70,7 @@ export default function Header({ data }: HeaderProps) {
               className="gradient-bg text-white hover:shadow-lg hover:shadow-tech-primary/25 transition-all duration-300"
               size="sm"
             >
-<<<<<<< HEAD
               {data?.ctaButtonText || 'Contactar'}
-=======
-              Contactar
->>>>>>> origin/main
             </Button>
           </motion.div>
 
@@ -158,11 +143,7 @@ export default function Header({ data }: HeaderProps) {
                   className="w-full gradient-bg text-white hover:shadow-lg hover:shadow-tech-primary/25 transition-all duration-300 py-3 text-base font-medium"
                   onClick={() => setIsMenuOpen(false)}
                 >
-<<<<<<< HEAD
                   {data?.mobileMenuButtonText || data?.ctaButtonText || 'Contactar'}
-=======
-                  Contactar
->>>>>>> origin/main
                 </Button>
               </motion.div>
             </div>

@@ -6,10 +6,7 @@ import BusinessContinuity from "@/components/BusinessContinuity";
 import Methodology from "@/components/Methodology";
 import Integrations from "@/components/Integrations";
 import Footer from "@/components/Footer";
-<<<<<<< HEAD
 import Excellence from "@/components/Excellence";
-=======
->>>>>>> origin/main
 import { useSiteContent } from "@/hooks/useSiteContent";
 
 export default function Index() {
@@ -24,12 +21,8 @@ export default function Index() {
   <Benefits data={content?.benefitsSection} />
   <BusinessContinuity data={content?.continuity} />
         <Methodology />
-<<<<<<< HEAD
   <Integrations integrations={content?.integrations} certifications={content?.certifications} />
   <Excellence data={content?.excellence} />
-=======
-        <Integrations integrations={content?.integrations} certifications={content?.certifications} />
->>>>>>> origin/main
       </main>
       <Footer data={content?.footer} />
     </div>

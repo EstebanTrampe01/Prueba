@@ -62,46 +62,6 @@ export type SiteContent = {
     benefitsOperativos: string[];
     benefitsEstrategicos: string[];
   };
-  benefitsSection?: {
-    badge: string;
-    title: string;
-    subtitle: string;
-    categories: Array<{
-      icon: string; // icon name (lucide)
-      title: string;
-      color: string; // tailwind gradient classes portion
-      benefits: Array<{ icon: string; title: string; description: string }>;
-    }>;
-  };
-  continuity?: {
-    badge: string;
-    title: string;
-    subtitle: string;
-    processes: Array<{
-      icon: string;
-      acronym: string;
-      title: string;
-      subtitle: string;
-      description: string;
-      color: string;
-    }>;
-    benefits: Array<{ icon: string; title: string; description: string }>;
-  };
-  digitalTransformation?: {
-    objectiveTitle: string;
-    objectiveDescription: string;
-    keyComponents: Array<{
-      icon: string;
-      title: string;
-      description: string;
-      details: string[];
-      color: string;
-    }>;
-    roadmap: Array<{ stage: number; title: string; activities: string; duration: string }>;
-    successIndicators: Array<{ icon: string; metric: string; target: string; color: string }>;
-    benefitsOperativos: string[];
-    benefitsEstrategicos: string[];
-  };
   services?: {
     headerTitle: string;
     headerSubtitle: string;
@@ -159,13 +119,8 @@ export type SiteContent = {
     };
     contact: {
   email: string;
-<<<<<<< HEAD
   phoneNumbers?: string[]; // lista completa de teléfonos (opcional)
   web?: string;
-=======
-  phone: string; // teléfono principal
-  phoneNumbers?: string[]; // lista completa de teléfonos (opcional)
->>>>>>> origin/main
   location: string;
     };
     navigation: {
@@ -394,11 +349,7 @@ export const defaultContent: SiteContent = {
     },
     contact: {
       email: "info@tecnologik.net",
-<<<<<<< HEAD
   web: "https://www.tecnologik.net",
-=======
-      phone: "+(502) 2372-2114",
->>>>>>> origin/main
       phoneNumbers: [
         "+(502) 2372-2114",
         "+(502) 2372-2115",

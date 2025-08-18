@@ -2,11 +2,8 @@
   "header": {
     "brandLetter": "T",
     "brandName": "Tecnologik",
-<<<<<<< HEAD
     "ctaButtonText": "Contactar",
     "mobileMenuButtonText": "Contactar",
-=======
->>>>>>> origin/main
     "nav": [
       {
         "name": "Servicios",
@@ -67,12 +64,8 @@
           "Análisis de escalabilidad completo",
           "Auditoría integral de recursos tecnológicos",
           "Identificación de cuellos de botella y limitaciones"
-<<<<<<< HEAD
         ],
         "ctaText": "Más información"
-=======
-        ]
->>>>>>> origin/main
       },
       {
         "icon": "Shield",
@@ -84,7 +77,6 @@
           "Evaluación de controles de seguridad",
           "Identificación de riesgos y vulnerabilidades",
           "Protección de datos y gestión del ciclo de vida de la información"
-<<<<<<< HEAD
         ],
         "ctaText": "Más información"
       },
@@ -176,97 +168,6 @@
           }
         ]
       }
-=======
-        ]
-      },
-      {
-        "icon": "TrendingUp",
-        "title": "Optimización y Mejora",
-        "description": "Oportunidades de mejora en optimización de recursos, maximizar la eficiencia operativa y abordar necesidades no atendidas.",
-        "features": [
-          "Optimización de recursos tecnológicos",
-          "Maximización de la eficiencia operativa",
-          "Identificación de necesidades no atendidas",
-          "Estrategias de mejora continua y escalabilidad"
-        ]
-      }
-  ]
-  },
-  "benefitsSection": {
-    "badge": "Impacto real en tu organización",
-    "title": "Beneficios de Nuestras Soluciones",
-    "highlight": "empresa sea eficiente",
-    "subtitle": "Transforma tu empresa con tecnología que impulsa el crecimiento, optimiza costos y proporciona ventajas competitivas sostenibles.",
-    "categories": [
-      {
-        "icon": "Zap",
-        "title": "AUTOMATIZACIÓN",
-        "color": "from-blue-500 to-blue-600",
-        "benefits": [
-          {
-            "icon": "Settings",
-            "title": "Optimización de procesos",
-            "description": "Automatización de tareas repetitivas para mayor eficiencia"
-          },
-          {
-            "icon": "Gauge",
-            "title": "Aumento de la agilidad",
-            "description": "Respuesta más rápida a cambios del mercado"
-          }
-        ]
-      },
-      {
-        "icon": "Database",
-        "title": "DEMOCRATIZACIÓN DE DATOS",
-        "color": "from-blue-400 to-blue-500",
-        "benefits": [
-          {
-            "icon": "Share2",
-            "title": "Datos habilitados para líneas de negocio",
-            "description": "Acceso descentralizado a información crítica"
-          },
-          {
-            "icon": "Shield",
-            "title": "Resiliencia operativa",
-            "description": "Continuidad del negocio garantizada"
-          }
-        ]
-      },
-      {
-        "icon": "TrendingUp",
-        "title": "MODERNIZACIÓN DEL ANÁLISIS",
-        "color": "from-blue-600 to-blue-700",
-        "benefits": [
-          {
-            "icon": "Brain",
-            "title": "Toma de decisiones estratégicas",
-            "description": "Análisis avanzado para decisiones informadas"
-          },
-          {
-            "icon": "Trophy",
-            "title": "Ventaja competitiva",
-            "description": "Diferenciación en el mercado mediante tecnología"
-          }
-        ]
-      },
-      {
-        "icon": "DollarSign",
-        "title": "COSTOS",
-        "color": "from-blue-700 to-blue-800",
-        "benefits": [
-          {
-            "icon": "Users",
-            "title": "Aumento de colaboración y productividad",
-            "description": "Equipos más eficientes y conectados"
-          },
-          {
-            "icon": "PiggyBank",
-            "title": "Ahorro de costos",
-            "description": "Reducción significativa en gastos operativos"
-          }
-        ]
-      }
->>>>>>> origin/main
     ]
   },
   "continuity": {
@@ -315,11 +216,8 @@
         "color": "from-blue-800 to-blue-900"
       }
     ],
-<<<<<<< HEAD
     "benefitsTitle": "Beneficios de Nuestro Enfoque Integral",
     "benefitsSubtitle": "Un sistema robusto que garantiza la continuidad operacional y minimiza el impacto de interrupciones no planificadas.",
-=======
->>>>>>> origin/main
     "benefits": [
       {
         "icon": "Shield",
@@ -492,11 +390,7 @@
     },
     "contact": {
       "email": "info@tecnologik.net",
-<<<<<<< HEAD
       "web": "https://www.tecnologik.net",
-=======
-      "phone": "+(502) 2372-2114",
->>>>>>> origin/main
       "phoneNumbers": [
         "+(502) 2372-2114",
         "+(502) 2372-2115",
