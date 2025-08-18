@@ -74,7 +74,11 @@ export default function Footer({ data }: FooterProps) {
                 Teléfonos
               </h4>
               <div className="space-y-3 text-sm text-muted-foreground">
+<<<<<<< HEAD
                 {(data?.contact.phoneNumbers || []).map(p => (
+=======
+                {(data?.contact.phoneNumbers || [data?.contact.phone || '+(502) 0000-0000']).map(p => (
+>>>>>>> origin/main
                   <div key={p}>{p}</div>
                 ))}
               </div>

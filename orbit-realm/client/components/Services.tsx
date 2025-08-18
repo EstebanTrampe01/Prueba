@@ -16,22 +16,30 @@ const COLOR_PRESETS = [
 export default function Services({ data }: ServicesProps) {
   const services = (data?.items || []).map((s, i) => {
     const preset = COLOR_PRESETS[i % COLOR_PRESETS.length];
+<<<<<<< HEAD
     const features = Array.isArray(s.features) ? s.features : [];
     if (!Array.isArray(s.features)) {
       // Ayuda de depuración: si falta features en algún item, no romper el render.
       // eslint-disable-next-line no-console
       console.warn('[Services] Item sin features array:', s.title);
     }
+=======
+>>>>>>> origin/main
     return {
       Icon: s.icon ? getIconComponent(s.icon) : null,
       title: s.title,
       description: s.description,
+<<<<<<< HEAD
       features,
       ctaText: s.ctaText,
+=======
+      features: s.features,
+>>>>>>> origin/main
       color: preset.color,
       textColor: preset.text
     };
   });
+<<<<<<< HEAD
 
   // Si no hay servicios (por error en el JSON), mostrar placeholder para que no parezca un hueco vacío.
   if (!services.length) {
@@ -43,6 +51,8 @@ export default function Services({ data }: ServicesProps) {
       </section>
     );
   }
+=======
+>>>>>>> origin/main
 
   const containerVariants: Variants = {
     hidden: { opacity: 0 },
@@ -136,8 +146,13 @@ export default function Services({ data }: ServicesProps) {
                         </li>
                       ))}
                     </ul>
+<<<<<<< HEAD
                     <Button
                       variant="outline"
+=======
+                    <Button 
+                      variant="outline" 
+>>>>>>> origin/main
                       className={`w-full border-current ${service.textColor} hover:bg-current hover:text-white transition-colors group`}
                     >
                       {service.ctaText || data?.buttonText || 'Más información'}

@@ -136,10 +136,18 @@ export default function BusinessContinuity({ data }: BusinessContinuityProps) {
         >
           <div className="text-center mb-12">
             <h3 className="text-2xl font-bold text-foreground mb-4">
+<<<<<<< HEAD
               { (data as any)?.benefitsTitle || 'Beneficios de Nuestro Enfoque Integral' }
             </h3>
             <p className="text-muted-foreground max-w-2xl mx-auto">
               { (data as any)?.benefitsSubtitle || 'Un sistema robusto que garantiza la continuidad operacional y minimiza el impacto de interrupciones no planificadas.' }
+=======
+              Beneficios de Nuestro Enfoque Integral
+            </h3>
+            <p className="text-muted-foreground max-w-2xl mx-auto">
+              Un sistema robusto que garantiza la continuidad operacional 
+              y minimiza el impacto de interrupciones no planificadas.
+>>>>>>> origin/main
             </p>
           </div>
 
