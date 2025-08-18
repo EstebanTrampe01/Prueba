@@ -16,15 +16,33 @@ const COLOR_PRESETS = [
 export default function Services({ data }: ServicesProps) {
   const services = (data?.items || []).map((s, i) => {
     const preset = COLOR_PRESETS[i % COLOR_PRESETS.length];
+    const features = Array.isArray(s.features) ? s.features : [];
+    if (!Array.isArray(s.features)) {
+      // Ayuda de depuración: si falta features en algún item, no romper el render.
+      // eslint-disable-next-line no-console
+      console.warn('[Services] Item sin features array:', s.title);
+    }
     return {
       Icon: s.icon ? getIconComponent(s.icon) : null,
       title: s.title,
       description: s.description,
-      features: s.features,
+      features,
+      ctaText: s.ctaText,
       color: preset.color,
       textColor: preset.text
     };
   });
+
+  // Si no hay servicios (por error en el JSON), mostrar placeholder para que no parezca un hueco vacío.
+  if (!services.length) {
+    return (
+      <section id="servicios" className="py-24 bg-background">
+        <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 text-center text-sm text-muted-foreground">
+          No hay servicios configurados. Revisa el archivo server/content.store.json y asegúrate de que exista la clave "services.items" como un array. Si editaste el texto de botones, verifica que no borraste accidentalmente corchetes o comas.
+        </div>
+      </section>
+    );
+  }
 
   const containerVariants: Variants = {
     hidden: { opacity: 0 },
@@ -118,11 +136,11 @@ export default function Services({ data }: ServicesProps) {
                         </li>
                       ))}
                     </ul>
-                    <Button 
-                      variant="outline" 
+                    <Button
+                      variant="outline"
                       className={`w-full border-current ${service.textColor} hover:bg-current hover:text-white transition-colors group`}
                     >
-                      Más información
+                      {service.ctaText || data?.buttonText || 'Más información'}
                       <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                     </Button>
                   </CardContent>

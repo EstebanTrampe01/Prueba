@@ -142,23 +142,6 @@ export default function Integrations({ integrations, certifications }: Integrati
           </motion.div>
         </div>
 
-        {/* Additional Info */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-          className="mt-16 text-center"
-        >
-          <div className="bg-gradient-to-r from-tech-primary/5 to-tech-accent/5 rounded-2xl p-8">
-            <h3 className="text-xl font-bold text-foreground mb-4">
-              {certifications?.headerTitle || 'Compromiso con la Excelencia'}
-            </h3>
-            <p className="text-muted-foreground max-w-3xl mx-auto">
-              {certifications?.headerSubtitle || 'Nuestro equipo se mantiene actualizado con las mejores prácticas del sector.'}
-            </p>
-          </div>
-        </motion.div>
       </div>
     </section>
   );

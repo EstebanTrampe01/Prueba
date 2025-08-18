@@ -50,6 +50,14 @@ export default function Footer({ data }: FooterProps) {
                     {data?.contact.email || 'info@tecnologik.net'}
                   </a>
                 </div>
+                {data?.contact.web && (
+                  <div className="flex items-center gap-3 text-sm">
+                    <span className="h-4 w-4 text-tech-primary flex-shrink-0 font-semibold text-xs">🌐</span>
+                    <a href={data.contact.web} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-tech-primary transition-colors break-all">
+                      {data.contact.web}
+                    </a>
+                  </div>
+                )}
               </div>
             </motion.div>
 
@@ -66,7 +74,7 @@ export default function Footer({ data }: FooterProps) {
                 Teléfonos
               </h4>
               <div className="space-y-3 text-sm text-muted-foreground">
-                {(data?.contact.phoneNumbers || [data?.contact.phone || '+(502) 0000-0000']).map(p => (
+                {(data?.contact.phoneNumbers || []).map(p => (
                   <div key={p}>{p}</div>
                 ))}
               </div>

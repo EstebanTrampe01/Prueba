@@ -17,6 +17,8 @@ export type SiteContent = {
     brandLetter: string;
     brandName: string;
     nav: Array<{ name: string; href: string }>;
+  ctaButtonText?: string;
+  mobileMenuButtonText?: string;
   };
   benefitsSection?: {
     badge: string;
@@ -33,6 +35,8 @@ export type SiteContent = {
     badge: string;
     title: string;
     subtitle: string;
+  benefitsTitle?: string;
+  benefitsSubtitle?: string;
     processes: Array<{
       icon: string;
       acronym: string;
@@ -61,11 +65,13 @@ export type SiteContent = {
   services?: {
     headerTitle: string;
     headerSubtitle: string;
+  buttonText?: string;
     items: Array<{
   icon?: string; // nombre del ícono lucide
       title: string;
       description: string;
       features: string[];
+  ctaText?: string; // texto del botón individual
     }>;
   };
   methodology?: {
@@ -99,6 +105,10 @@ export type SiteContent = {
       badge: string;
     }>;
   };
+  excellence?: {
+    title: string;
+    subtitle: string;
+  };
   footer?: {
     newsletterTitle: string;
     newsletterText: string;
@@ -109,8 +119,8 @@ export type SiteContent = {
     };
     contact: {
   email: string;
-  phone: string; // teléfono principal
   phoneNumbers?: string[]; // lista completa de teléfonos (opcional)
+  web?: string;
   location: string;
     };
     navigation: {
@@ -339,7 +349,7 @@ export const defaultContent: SiteContent = {
     },
     contact: {
       email: "info@tecnologik.net",
-      phone: "+(502) 2372-2114",
+  web: "https://www.tecnologik.net",
       phoneNumbers: [
         "+(502) 2372-2114",
         "+(502) 2372-2115",

@@ -1,13 +1,16 @@
 import { useState } from 'react';
+import type { SiteContent } from '@shared/content';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
 import { Button } from './ui/button';
 
-export default function Header() {
+interface HeaderProps { data?: SiteContent['header']; }
+
+export default function Header({ data }: HeaderProps) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const navigation = [
+  const navigation = (data?.nav) || [
     { name: 'Servicios', href: '#servicios' },
     { name: 'Metodología', href: '#metodologia' },
     { name: 'Certificaciones', href: '#certificaciones' },
@@ -29,7 +32,7 @@ export default function Header() {
               <div className="gradient-bg w-8 h-8 sm:w-9 sm:h-9 rounded-lg flex items-center justify-center shadow-lg">
                 <span className="text-white font-bold text-sm sm:text-base">T</span>
               </div>
-              <span className="text-lg sm:text-xl font-bold text-foreground truncate">Tecnologik</span>
+                <span className="text-lg sm:text-xl font-bold text-foreground truncate">{data?.brandName || 'Tecnologik'}</span>
             </Link>
           </motion.div>
 
@@ -67,7 +70,7 @@ export default function Header() {
               className="gradient-bg text-white hover:shadow-lg hover:shadow-tech-primary/25 transition-all duration-300"
               size="sm"
             >
-              Contactar
+              {data?.ctaButtonText || 'Contactar'}
             </Button>
           </motion.div>
 
@@ -140,7 +143,7 @@ export default function Header() {
                   className="w-full gradient-bg text-white hover:shadow-lg hover:shadow-tech-primary/25 transition-all duration-300 py-3 text-base font-medium"
                   onClick={() => setIsMenuOpen(false)}
                 >
-                  Contactar
+                  {data?.mobileMenuButtonText || data?.ctaButtonText || 'Contactar'}
                 </Button>
               </motion.div>
             </div>

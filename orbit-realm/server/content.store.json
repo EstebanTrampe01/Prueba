@@ -2,6 +2,8 @@
   "header": {
     "brandLetter": "T",
     "brandName": "Tecnologik",
+    "ctaButtonText": "Contactar",
+    "mobileMenuButtonText": "Contactar",
     "nav": [
       {
         "name": "Servicios",
@@ -51,6 +53,7 @@
   "services": {
     "headerTitle": "Nuestros Servicios",
     "headerSubtitle": "Soluciones tecnológicas integrales diseñadas para transformar y optimizar la infraestructura digital de tu empresa.",
+    "buttonText": "Más información",
     "items": [
       {
         "icon": "Server",
@@ -61,7 +64,8 @@
           "Análisis de escalabilidad completo",
           "Auditoría integral de recursos tecnológicos",
           "Identificación de cuellos de botella y limitaciones"
-        ]
+        ],
+        "ctaText": "Más información"
       },
       {
         "icon": "Shield",
@@ -73,7 +77,8 @@
           "Evaluación de controles de seguridad",
           "Identificación de riesgos y vulnerabilidades",
           "Protección de datos y gestión del ciclo de vida de la información"
-        ]
+        ],
+        "ctaText": "Más información"
       },
       {
         "icon": "TrendingUp",
@@ -84,9 +89,10 @@
           "Maximización de la eficiencia operativa",
           "Identificación de necesidades no atendidas",
           "Estrategias de mejora continua y escalabilidad"
-        ]
+        ],
+        "ctaText": "Más información"
       }
-  ]
+    ]
   },
   "benefitsSection": {
     "badge": "Impacto real en tu organización",
@@ -210,6 +216,8 @@
         "color": "from-blue-800 to-blue-900"
       }
     ],
+    "benefitsTitle": "Beneficios de Nuestro Enfoque Integral",
+    "benefitsSubtitle": "Un sistema robusto que garantiza la continuidad operacional y minimiza el impacto de interrupciones no planificadas.",
     "benefits": [
       {
         "icon": "Shield",
@@ -370,9 +378,11 @@
       }
     ]
   },
+  "excellence": {
+    "title": "Compromiso con la Excelencia",
+    "subtitle": "Nuestro equipo se mantiene actualizado con las últimas certificaciones y mejores prácticas del sector, garantizando que siempre recibas soluciones basadas en los estándares más altos de la industria."
+  },
   "footer": {
-    "newsletterTitle": "Mantente actualizado con las últimas tendencias tecnológicas",
-    "newsletterText": "Recibe insights exclusivos, mejores prácticas y actualizaciones sobre infraestructura tecnológica directamente en tu bandeja de entrada.",
     "brand": {
       "logoLetter": "T",
       "companyName": "Tecnologik S.A.",
@@ -380,7 +390,7 @@
     },
     "contact": {
       "email": "info@tecnologik.net",
-      "phone": "+(502) 2372-2114",
+      "web": "https://www.tecnologik.net",
       "phoneNumbers": [
         "+(502) 2372-2114",
         "+(502) 2372-2115",
