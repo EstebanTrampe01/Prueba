@@ -19,6 +19,7 @@ export type SiteContent = {
     nav: Array<{ name: string; href: string }>;
   ctaButtonText?: string;
   mobileMenuButtonText?: string;
+  loginButtonText?: string; // texto para el botón de iniciar sesión
   };
   benefitsSection?: {
     badge: string;
@@ -162,6 +163,9 @@ export const defaultContent: SiteContent = {
       { name: 'Certificaciones', href: '#certificaciones' },
       { name: 'Integraciones', href: '#integraciones' },
     ],
+  ctaButtonText: 'Contactar',
+  mobileMenuButtonText: 'Contactar',
+  loginButtonText: 'Iniciar sesión'
   },
   benefitsSection: {
   badge: 'Impacto real en tu organización',

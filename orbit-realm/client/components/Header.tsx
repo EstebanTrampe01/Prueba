@@ -59,18 +59,26 @@ export default function Header({ data }: HeaderProps) {
             </motion.div>
           </div>
 
-          {/* CTA Button */}
+          {/* CTA Buttons (Contact + Login) */}
           <motion.div
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="hidden md:block"
+            className="hidden md:flex items-center gap-3"
           >
             <Button
               className="gradient-bg text-white hover:shadow-lg hover:shadow-tech-primary/25 transition-all duration-300"
               size="sm"
             >
               {data?.ctaButtonText || 'Contactar'}
+            </Button>
+            <Button
+              variant="outline"
+              size="sm"
+              asChild
+              className="border-tech-primary/30 text-tech-primary hover:bg-tech-primary/10"
+            >
+              <Link to="/login">{data?.loginButtonText || 'Iniciar sesión'}</Link>
             </Button>
           </motion.div>
 
@@ -137,13 +145,21 @@ export default function Header({ data }: HeaderProps) {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.3, delay: 0.4 }}
-                className="pt-4 px-4"
+                className="pt-4 px-4 space-y-3"
               >
                 <Button
                   className="w-full gradient-bg text-white hover:shadow-lg hover:shadow-tech-primary/25 transition-all duration-300 py-3 text-base font-medium"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {data?.mobileMenuButtonText || data?.ctaButtonText || 'Contactar'}
+                </Button>
+                <Button
+                  variant="outline"
+                  className="w-full py-3 text-base font-medium border-tech-primary/30 text-tech-primary hover:bg-tech-primary/10"
+                  asChild
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  <Link to="/login">{data?.loginButtonText || 'Iniciar sesión'}</Link>
                 </Button>
               </motion.div>
             </div>

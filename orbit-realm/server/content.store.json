@@ -4,6 +4,7 @@
     "brandName": "Tecnologik",
     "ctaButtonText": "Contactar",
     "mobileMenuButtonText": "Contactar",
+  "loginButtonText": "Iniciar sesión",
     "nav": [
       {
         "name": "Servicios",
